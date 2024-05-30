@@ -5,7 +5,7 @@ import Evaluation from "./website_pages/Evaluation";
 import Questions from "./website_pages/Questions";
 import Feedback from "./website_pages/Feedback";
 import Dejavu from "./website_pages/Dejavu";
-
+import './index.css'
 
 
 const root = ReactDOM.createRoot(

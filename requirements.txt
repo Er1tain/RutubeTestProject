@@ -1,0 +1,4 @@
+npm v9.6.7
+react
+react-router-dom
+typescript

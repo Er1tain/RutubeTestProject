@@ -1,0 +1,15 @@
+body {
+    /* 1. */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    /* Black */
+    background: #020B14;
+
+}
+
+

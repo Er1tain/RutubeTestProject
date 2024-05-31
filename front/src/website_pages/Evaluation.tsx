@@ -30,7 +30,10 @@ export default class Evaluation extends React.Component {
                     </p>
                     <div className={"Selection"}>
                         {children}
-                        <div className={"Labels"}></div>
+                        <div className={"Labels"}>
+                            <p style={{fontSize: 14, fontFamily: 'Roboto Regular', width: "max-content", color: "#BFC9D4"}}>Хуже некуда</p>
+                            <p style={{fontSize: 14, fontFamily: 'Roboto Regular', width: "max-content", color: "#BFC9D4"}}>Отлично</p>
+                        </div>
                     </div>
                 </div>
             </div>

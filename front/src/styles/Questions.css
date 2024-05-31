@@ -1,0 +1,168 @@
+#Test {
+    /* Content */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 0px 24px;
+    gap: 28px;
+    isolation: isolate;
+
+    width: 1053px;
+    max-width: 1053px;
+    height: 806px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+#Label_test {
+    /* Пожалуйста, ответьте на дополнительные вопросы. */
+
+    width: 1053px;
+    height: 22px;
+
+    /* paragraph */
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    /* identical to box height, or 129% */
+
+    /* Gray */
+    color: #BFC9D4;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 0;
+
+}
+
+.question_and_answer {
+    /* div */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 1053px;
+    height: 164px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 1;
+
+    p {
+        font-size: 12px;
+        font-family: 'Roboto Regular';
+    }
+
+}
+
+.question {
+    /* div */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+
+    width: 388px;
+    height: 20px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+#answer_first {
+    /* Rating */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 1053px;
+    height: 136px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.answer {
+    /* Rating */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 1053px;
+    height: 40px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#question_button {
+    /* Button */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+
+    width: 222px;
+    height: 44px;
+
+    background: #00A1E7;
+    border-radius: 22px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 8;
+    flex-grow: 0;
+    z-index: 8;
+}
+
+

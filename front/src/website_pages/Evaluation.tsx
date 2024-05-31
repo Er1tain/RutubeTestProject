@@ -3,16 +3,25 @@ import Divider from "../components/Evaluation/Divider";
 import React from "react";
 import '../styles/Evaluation.css';
 import '../styles/choice_button.css';
+import SelectEvaluation from "../LogicApp/Evaluation";
+import Redirect from "../LogicApp/Redirect";
+
 
 export default class Evaluation extends React.Component {
 
     Buttons() {
         let variants = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-        return <div className={"List_button"}>
-            {variants.map(variant => {
-                return <button className={"Choice_button"}>{variant}</button>
-            })}
-        </div>
+        return (
+            <Redirect>
+                <div className={"List_button"} onClick={(e)=>SelectEvaluation(e)}>
+                    {variants.map(variant => {
+                        return (
+                                <button className={"Choice_button"} value={variant}>{variant}</button>
+                        );
+                    })}
+                </div>
+            </Redirect>
+        );
     }
 
     Content({children}: any) {

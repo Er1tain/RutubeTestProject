@@ -78,7 +78,7 @@
         height: 66px;
 
         /* paragraph */
-        font-family: 'Roboto Light';
+        font-family: 'Roboto Regular';
         font-style: normal;
         font-weight: 400;
         font-size: 17px;
@@ -138,4 +138,68 @@
 
 }
 
+.Selection {
+    /* div */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 530px;
+    height: 68px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+
+    .List_button {
+        /* Rating */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+
+        width: 530px;
+        height: 40px;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+
+    }
+    .Labels {
+        /* Caption */
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+
+        width: 530px;
+        height: 20px;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+
+    }
+}
 

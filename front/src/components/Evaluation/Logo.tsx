@@ -1,4 +1,4 @@
-import "../styles/logo.css"
+import "../../styles/logo.css"
 
 export default function Logo() {
     return <svg width="148" height="40" viewBox="0 0 590 98" fill="none" xmlns="http://www.w3.org/2000/svg" id={"logo"}>

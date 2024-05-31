@@ -1,5 +1,5 @@
-import Header from "../components/Header";
-import Divider from "../components/Divider";
+import Header from "../components/Evaluation/Header";
+import Divider from "../components/Evaluation/Divider";
 import React from "react";
 import '../styles/Evaluation.css';
 import '../styles/choice_button.css';

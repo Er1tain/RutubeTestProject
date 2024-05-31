@@ -40,4 +40,14 @@ body {
     src: url('./fonts/Roboto-Light.ttf');
 }
 
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('./fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('./fonts/Roboto-Regular.ttf');
+}
+
 

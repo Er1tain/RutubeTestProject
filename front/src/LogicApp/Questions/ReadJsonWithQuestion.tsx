@@ -21,7 +21,8 @@ export default function Readjson(setQuestAns:  React.Dispatch<React.SetStateActi
 
         let Buttons: React.ReactElement[] = [];
         json_data[i]["answers"].forEach((answers)=>{
-            Buttons.push(i != 0 ? <ButtonAnswers>{answers}</ButtonAnswers> : <TextButtonAnswers>{answers}</TextButtonAnswers>);
+            //value: (text in button:number of question
+            Buttons.push(i != 0 ? <ButtonAnswers value={`${answers}:${i+1}`}>{answers}</ButtonAnswers> : <TextButtonAnswers value={`${answers}:${i+1}`}>{answers}</TextButtonAnswers>);
         })
         let answer = i != 0 ? <Answers>{Buttons}</Answers> : <TextAnswers>{Buttons}</TextAnswers>
         answers.push(answer);

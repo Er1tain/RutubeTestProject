@@ -1,6 +1,6 @@
 import {createElement, useEffect, useState} from "react";
 import ReadJson from "../../LogicApp/Questions/ReadJsonWithQuestion";
-
+import {Label, TestFrame} from "../../styles/Questions/Test";
 
 export default function Test() {
     const [questions_answers, setQuestAns] = useState(createElement('div'));
@@ -9,9 +9,9 @@ export default function Test() {
     useEffect(() => ReadJson(setQuestAns),[]);
 
     return (
-        <div id={"Test"}>
-            <h1 id={"Label_test"}>Пожалуйста, ответьте на дополнительные вопросы.</h1>
+        <TestFrame>
+            <Label>Пожалуйста, ответьте на дополнительные вопросы.</Label>
             {questions_answers}
-        </div>
+        </TestFrame>
     )
 }

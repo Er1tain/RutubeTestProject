@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Test = styled.div`
+export const TestFrame = styled.div`
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -19,11 +19,16 @@ export const Test = styled.div`
         flex-grow: 0;`
 
 export const Label = styled.h1`
+    @font-face {
+        font-family: 'Roboto Regular';
+        src: url(../../fonts/Roboto-Regular.ttf);
+    }
+    
     /* Пожалуйста, ответьте на дополнительные вопросы. */
     width: 1053px;
     height: 22px;
     /* paragraph */
-    font-family: 'Roboto';
+    font-family: 'Roboto Regular';
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -113,7 +118,6 @@ export const ButtonAnswers = styled.button`
     flex: none;
     order: 2;
     flex-grow: 0;`
-
 
 export const SendDataButton = styled.button`
     /* Button */

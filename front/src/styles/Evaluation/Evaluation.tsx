@@ -73,12 +73,12 @@ export const Frame = styled.div`
 export const FrameImage = styled.div`
     width: 455.36px;
     height: 200px;
-    background-image: url("../images/evaluation_image.svg");
+    background-image: url("../../images/evaluation_image.svg");
     /* Inside auto layout */
     flex: none;
     order: 0;
     flex-grow: 0;
-    pointer-events:none`
+    pointer-events: none`
 
 export const Selection = styled.div`
     display: flex;

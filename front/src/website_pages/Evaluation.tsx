@@ -10,9 +10,10 @@ import {
     Question,
     Selection,
     Title
-} from "../styles/Evaluation";
+} from "../styles/Evaluation/Evaluation";
 import SelectEvaluation from "../LogicApp/Evaluation";
 import Redirect from "../LogicApp/Redirect";
+import EvaluationImage from "../images/evaluation_image";
 
 
 export default class Evaluation extends React.Component {
@@ -35,12 +36,9 @@ export default class Evaluation extends React.Component {
     Content({children}: any) {
 
         return <EvaluationContent>
-            <Frame>
-                <FrameImage></FrameImage>
-            </Frame>
+            <EvaluationImage/>
             <Question>
                 <div className={"center-text-content"}>
-
                     <Title>Уважаемый клиент!</Title>
                     <Paragraph>
                         Запрос закрыт. Пожалуйста, оцените качество предоставленного сервиса по данному обращению,

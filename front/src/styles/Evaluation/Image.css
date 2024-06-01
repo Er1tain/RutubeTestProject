@@ -1,0 +1,10 @@
+#evaluation_image {
+    width: 455.36px;
+    height: 200px;
+    background: url(../../images/evaluation_image.svg);
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    pointer-events:none
+}

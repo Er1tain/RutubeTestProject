@@ -1,0 +1,14 @@
+#questions_image {
+    width: 581px;
+    max-width: 581px;
+    height: 540px;
+    max-height: 540px;
+    background: url("../../images/questions_image.svg");
+    /* Inside auto layout */
+    pointer-events:none;
+
+    position: absolute;
+    left: 30em;
+    top: 5em;
+
+}

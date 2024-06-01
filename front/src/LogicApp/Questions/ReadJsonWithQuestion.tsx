@@ -1,4 +1,11 @@
-import {Answers, ButtonAnswers, PairQuestionAnswers, Question} from "../../styles/Questions/Test";
+import {
+    Answers,
+    ButtonAnswers,
+    PairQuestionAnswers,
+    Question,
+    TextAnswers,
+    TextButtonAnswers
+} from "../../styles/Questions/Test";
 import getArrayData from "./GetJSONData";
 
 export default function Readjson(setQuestAns:  React.Dispatch<React.SetStateAction<any>>) {
@@ -14,9 +21,9 @@ export default function Readjson(setQuestAns:  React.Dispatch<React.SetStateActi
 
         let Buttons: React.ReactElement[] = [];
         json_data[i]["answers"].forEach((answers)=>{
-            Buttons.push(<ButtonAnswers>{answers}</ButtonAnswers>);
+            Buttons.push(i != 0 ? <ButtonAnswers>{answers}</ButtonAnswers> : <TextButtonAnswers>{answers}</TextButtonAnswers>);
         })
-        let answer = <Answers>{Buttons}</Answers>
+        let answer = i != 0 ? <Answers>{Buttons}</Answers> : <TextAnswers>{Buttons}</TextAnswers>
         answers.push(answer);
     }
 

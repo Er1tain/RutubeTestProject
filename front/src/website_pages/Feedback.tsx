@@ -1,6 +1,7 @@
 import Header from "../components/Evaluation/Header";
 import Divider from "../components/Evaluation/Divider";
 import styled from "styled-components";
+import Image from "../components/Feedback/image";
 
 const FrameImage = styled.div`
     display: flex;
@@ -22,7 +23,7 @@ export default function Feedback() {
             <Header/>
             <Divider/>
             <FrameImage>
-
+                <Image/>
             </FrameImage>
         </div>
     );

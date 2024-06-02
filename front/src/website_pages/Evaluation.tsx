@@ -1,6 +1,6 @@
 import Header from "../components/Evaluation/Header";
 import Divider from "../components/Evaluation/Divider";
-import React from "react";
+import React, {useEffect} from "react";
 import {
     ChoiceButton,
     EvaluationContent,
@@ -14,38 +14,21 @@ import {
 import SelectEvaluation from "../LogicApp/Evaluation";
 import Redirect from "../LogicApp/Redirect";
 import EvaluationImage from "../images/evaluation_image";
-import {NavigateFunction, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
-class EvaluationWithoutRouter extends React.Component {
-    constructor(props: any) {
-        super(props);
-    }
+export default function Evaluation() {
+    const navigate = useNavigate();
 
-    componentDidMount() {
+    //if test was finished in past then redirect in /dejavu
+    useEffect(() => {
         for (let i = 0; i < localStorage.length; i++) {
             let key = localStorage.key(i);
             if (key != null && localStorage.getItem(key) === null) return
         }
+        navigate("/dejavu");
+    }, []);
 
-    }
-
-    Buttons() {
-        let variants = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-        return (
-            <Redirect url="/questions">
-                <ListButtons onClick={(e)=>SelectEvaluation(e)}>
-                    {variants.map(variant => {
-                        return (
-                            <ChoiceButton value={variant}>{variant}</ChoiceButton>
-                        );
-                    })}
-                </ListButtons>
-            </Redirect>
-        );
-    }
-
-    Content({children}: any) {
-
+    const Content = ({children}: any)=>{
         return <EvaluationContent>
             <EvaluationImage/>
             <Question>
@@ -67,18 +50,27 @@ class EvaluationWithoutRouter extends React.Component {
         </EvaluationContent>
     }
 
-    render() {
-        return <div>
+    const Buttons = ()=> {
+        let variants = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        return (
+            <Redirect url="/questions">
+                <ListButtons onClick={(e)=>SelectEvaluation(e)}>
+                    {variants.map(variant => {
+                        return (
+                            <ChoiceButton value={variant}>{variant}</ChoiceButton>
+                        );
+                    })}
+                </ListButtons>
+            </Redirect>
+        );
+    }
+    return (
+        <div>
             <Header/>
             <Divider/>
-            <this.Content>
-                <this.Buttons/>
-            </this.Content>
+            <Content>
+                <Buttons/>
+            </Content>
         </div>
-    }
-}
-
-export default function Evaluation() {
-    const navigate = useNavigate();
-    return <EvaluationWithoutRouter></EvaluationWithoutRouter>
+    );
 }

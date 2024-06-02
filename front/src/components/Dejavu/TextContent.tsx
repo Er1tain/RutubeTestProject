@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {useNavigate} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
 
 const Content = styled.div`
     display: flex;
@@ -90,13 +90,15 @@ const ButtonReturn = styled.button`
     border: #00A1E7;
     border-radius: 22px;
 
-    /* Inside auto layout */
+`
+const Link = styled.a`
     flex: none;
     order: 2;
     flex-grow: 0;
+    text-decoration: none;
     position: relative;
     bottom: 50px;
-`
+    `
 
 export default function TextContent() {
 
@@ -106,7 +108,9 @@ export default function TextContent() {
         <Content>
             <Title>Вы уже прошли этот опрос</Title>
             <Paragraph>Спасибо, что делитесь мнением и помогаете нам быть лучше</Paragraph>
-            <ButtonReturn onClick={() => navigate("rutube.ru")}>Перейти на RUTUBE</ButtonReturn>
+            <Link href={"https://rutube.ru"}>
+                <ButtonReturn>Перейти на RUTUBE</ButtonReturn>
+            </Link>
         </Content>
     );
 }

@@ -2,6 +2,7 @@ import Header from "../components/Evaluation/Header";
 import Divider from "../components/Evaluation/Divider";
 import styled from "styled-components";
 import Image from "../components/Dejavu/image";
+import TextContent from "../components/Dejavu/TextContent";
 
 const Center = styled.div`
     display: flex;
@@ -36,6 +37,7 @@ export default function Dejavu() {
                 <FrameImage>
                     <Image/>
                 </FrameImage>
+                <TextContent/>
             </Center>
         </div>
     );

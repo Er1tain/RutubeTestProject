@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {useNavigate} from "react-router-dom";
 
 const Content = styled.div`
     display: flex;
@@ -98,11 +99,14 @@ const ButtonReturn = styled.button`
 `
 
 export default function TextContent() {
+
+    const navigate = useNavigate();
+
     return (
         <Content>
                 <Title>Спасибо за обратную связь!</Title>
                 <Paragraph>Это поможет нам улучшить сервис</Paragraph>
-                <ButtonReturn>Перейти на платформу</ButtonReturn>
+                <ButtonReturn onClick={()=>navigate("*")}>Перейти на платформу</ButtonReturn>
         </Content>
     );
 }

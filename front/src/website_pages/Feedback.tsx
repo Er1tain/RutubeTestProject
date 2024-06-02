@@ -3,6 +3,8 @@ import Divider from "../components/Evaluation/Divider";
 import styled from "styled-components";
 import Image from "../components/Feedback/image";
 import TextContent from "../components/Feedback/TextContent";
+import {useNavigate} from "react-router-dom";
+import {useEffect} from "react";
 
 const Center = styled.div`
    
@@ -31,6 +33,17 @@ const FrameImage = styled.div`
     flex-grow: 0;`
 
 export default function Feedback() {
+    const navigate = useNavigate();
+
+    //if test was finished in past then redirect in /dejavu
+    useEffect(() => {
+        for (let i = 0; i < localStorage.length; i++) {
+            let key = localStorage.key(i);
+            if (key != null && localStorage.getItem(key) === null) return
+        }
+        navigate("/dejavu");
+    }, []);
+
     return (
         <div>
             <Header/>

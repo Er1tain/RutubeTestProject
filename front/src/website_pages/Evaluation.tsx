@@ -14,9 +14,20 @@ import {
 import SelectEvaluation from "../LogicApp/Evaluation";
 import Redirect from "../LogicApp/Redirect";
 import EvaluationImage from "../images/evaluation_image";
+import {NavigateFunction, useNavigate} from "react-router-dom";
 
+class EvaluationWithoutRouter extends React.Component {
+    constructor(props: any) {
+        super(props);
+    }
 
-export default class Evaluation extends React.Component {
+    componentDidMount() {
+        for (let i = 0; i < localStorage.length; i++) {
+            let key = localStorage.key(i);
+            if (key != null && localStorage.getItem(key) === null) return
+        }
+
+    }
 
     Buttons() {
         let variants = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -65,4 +76,9 @@ export default class Evaluation extends React.Component {
             </this.Content>
         </div>
     }
+}
+
+export default function Evaluation() {
+    const navigate = useNavigate();
+    return <EvaluationWithoutRouter></EvaluationWithoutRouter>
 }

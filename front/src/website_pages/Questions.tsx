@@ -7,6 +7,16 @@ import Test from "../components/Questions/Test";
 
 export default function Questions(){
     const navigate = useNavigate();
+
+    //if test was finished in past then redirect in /dejavu
+    useEffect(() => {
+        for (let i = 0; i < localStorage.length; i++) {
+            let key = localStorage.key(i);
+            if (key != null && localStorage.getItem(key) === null) return
+        }
+        navigate("/dejavu");
+    }, []);
+
     useEffect(() => {
         CheckLocalStorage(navigate);
 

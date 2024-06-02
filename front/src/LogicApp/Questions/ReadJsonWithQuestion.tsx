@@ -9,6 +9,15 @@ import {
 import getArrayData from "./GetJSONData";
 import setColorActivButton from "./Test/setColorActivButton";
 
+function CheckAnswerLocalStorage(value: string): any {
+    let pair = value.split(":");
+    if (localStorage.getItem(pair[1]) === pair[0])
+        return {
+            background: "#1F73F9"
+        }
+    return {}
+}
+
 export default function ReadJson(setQuestAns:  React.Dispatch<React.SetStateAction<any>>) {
 
     let json_data = getArrayData();
@@ -25,8 +34,8 @@ export default function ReadJson(setQuestAns:  React.Dispatch<React.SetStateActi
         json_data[i]["answers"].forEach((answers)=>{
 
             //value: (text in button:number of question
-            Buttons.push(i != 0 ? <ButtonAnswers value={`${answers}:${i+1}`}>{answers}</ButtonAnswers> :
-                <TextButtonAnswers value={`${answers}:${i+1}`}>{answers}</TextButtonAnswers>);
+            Buttons.push(i != 0 ? <ButtonAnswers style={CheckAnswerLocalStorage(`${answers}:${i+1}`)} value={`${answers}:${i+1}`}>{answers}</ButtonAnswers> :
+                <TextButtonAnswers style={CheckAnswerLocalStorage(`${answers}:${i+1}`)} value={`${answers}:${i+1}`}>{answers}</TextButtonAnswers>);
         })
         let answer = i != 0 ? <Answers onClick={event=>setColorActivButton(event)}>{Buttons}</Answers> : <TextAnswers onClick={event=>setColorActivButton(event)}>{Buttons}</TextAnswers>
         answers.push(answer);

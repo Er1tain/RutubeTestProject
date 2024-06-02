@@ -1,0 +1,16 @@
+#dejavu_image {
+    /* image 2 */
+
+    width: 524px;
+    height: 232px;
+
+    background: url(../../images/dejavu_image.svg);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    pointer-events:none;
+    position: relative;
+    bottom: 50px;
+}

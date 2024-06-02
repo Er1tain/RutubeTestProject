@@ -1,8 +1,5 @@
 import styled from "styled-components";
 
-/* Content */
-
-
 export const TestFrame = styled.div`
         display: flex;
         flex-direction: column;
@@ -165,3 +162,5 @@ export const SendDataButton = styled.button`
 
     /* Inside auto layout */
    `
+
+

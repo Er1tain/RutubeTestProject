@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/RutubeTestProject/static/css/main.fe13eb15.css",
-    "main.js": "/RutubeTestProject/static/js/main.4a94dba3.js",
+    "main.css": "/RutubeTestProject/static/css/main.191cea56.css",
+    "main.js": "/RutubeTestProject/static/js/main.3275f808.js",
     "static/media/questions_image.svg": "/RutubeTestProject/static/media/questions_image.944fd8333341615e2e09.svg",
     "static/media/evaluation_image.svg": "/RutubeTestProject/static/media/evaluation_image.58ee09f560b00a930a3e.svg",
     "static/media/Roboto-Medium.ttf": "/RutubeTestProject/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
@@ -11,11 +11,11 @@
     "static/media/dejavu_image.svg": "/RutubeTestProject/static/media/dejavu_image.18c0025d131805178564.svg",
     "static/media/feedback_image.svg": "/RutubeTestProject/static/media/feedback_image.2d1a38bba92216f161c0.svg",
     "index.html": "/RutubeTestProject/index.html",
-    "main.fe13eb15.css.map": "/RutubeTestProject/static/css/main.fe13eb15.css.map",
-    "main.4a94dba3.js.map": "/RutubeTestProject/static/js/main.4a94dba3.js.map"
+    "main.191cea56.css.map": "/RutubeTestProject/static/css/main.191cea56.css.map",
+    "main.3275f808.js.map": "/RutubeTestProject/static/js/main.3275f808.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe13eb15.css",
-    "static/js/main.4a94dba3.js"
+    "static/css/main.191cea56.css",
+    "static/js/main.3275f808.js"
   ]
 }

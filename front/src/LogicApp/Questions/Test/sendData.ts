@@ -16,5 +16,8 @@ export default function sendData(navigate: NavigateFunction) {
         })
     }
     console.log(data_from_localStorage);
+
     navigate("/feedback")
+    setTimeout(()=>localStorage.special = "marker", 1500)
+
 }

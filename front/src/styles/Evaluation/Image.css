@@ -1,4 +1,13 @@
 #evaluation_image {
+    @media (max-width: 375px) {
+        /* image */
+
+        width: 373.39px;
+        height: 164px;
+
+
+    }
+
     width: 455.36px;
     height: 200px;
     background: url(../../images/evaluation_image.svg);

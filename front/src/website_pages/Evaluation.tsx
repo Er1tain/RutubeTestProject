@@ -2,6 +2,7 @@ import Header from "../components/Evaluation/Header";
 import Divider from "../components/Evaluation/Divider";
 import React, {useEffect} from "react";
 import {
+    CenterTextContent,
     ChoiceButton,
     EvaluationContent,
     Frame,
@@ -28,7 +29,7 @@ export default function Evaluation() {
         return <EvaluationContent>
             <EvaluationImage/>
             <Question>
-                <div className={"center-text-content"}>
+                <CenterTextContent>
                     <Title>Уважаемый клиент!</Title>
                     <Paragraph>
                         Запрос закрыт. Пожалуйста, оцените качество предоставленного сервиса по данному обращению,
@@ -41,7 +42,7 @@ export default function Evaluation() {
                             <ParagraphEvaluation>Отлично</ParagraphEvaluation>
                         </Label>
                     </Selection>
-                </div>
+                </CenterTextContent>
             </Question>
         </EvaluationContent>
     }

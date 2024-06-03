@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ChoiceButton = styled.button`
+    
     background-color: #020B14;
     color: white;
     box-sizing: border-box;
@@ -46,13 +47,16 @@ export const EvaluationContent =styled.div`
 
 
     /* Inside auto layout */
-    flex: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
+    
 
     position: relative;
     bottom: 50px;`
+
+export const CenterTextContent = styled.div`
+    @media screen and (max-width: 375px) {
+        margin-left: 600px;
+    }
+`
 
 export const Frame = styled.div`
     display: flex;
@@ -216,6 +220,7 @@ export const Label = styled.div`
     flex-grow: 0;`
 
 export const ListButtons = styled.div`
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;

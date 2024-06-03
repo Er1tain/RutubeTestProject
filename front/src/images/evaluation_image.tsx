@@ -2,6 +2,11 @@ import '../styles/Evaluation/Image.css';
 import styled from "styled-components";
 
 const Frame = styled.div`
+    @media (max-width: 375px) {
+        
+
+
+    }
     display: flex;
     flex-direction: column;
     align-items: center;

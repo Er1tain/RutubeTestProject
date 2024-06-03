@@ -1,12 +1,13 @@
 html, body {
     margin: 0;
     padding: 0;
+    @media screen and (max-width: 375px) {
+        width: 375px;
+        height: 812px;
+    }
 }
 
 body {
-    /* 1. */
-
-    /* Auto layout */
     display: flex;
     flex-direction: column;
     align-items: center;

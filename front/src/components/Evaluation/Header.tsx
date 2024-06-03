@@ -2,6 +2,10 @@ import Logo from "./Logo";
 import styled from "styled-components";
 
 const HeaderStylized = styled.header`
+    @media (max-width: 375px) {
+        
+    }
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;

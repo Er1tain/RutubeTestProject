@@ -21,7 +21,7 @@ export default function Evaluation() {
 
     //if test was finished in past then redirect in /dejavu
     useEffect(() => {
-        if (localStorage.length == 7) navigate("/dejavu");
+        if (localStorage.length == 8) navigate("/dejavu");
     }, []);
 
     const Content = ({children}: any)=>{

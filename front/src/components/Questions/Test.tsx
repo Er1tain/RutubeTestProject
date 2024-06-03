@@ -15,11 +15,11 @@ export default function Test() {
     const navigate = useNavigate();
 
     return (
-        <TestFrame onClick={event => saveAnswerLocalStorage(event)}>
+        <TestFrame onClick={event => {saveAnswerLocalStorage(event);}}>
             <Label>Пожалуйста, ответьте на дополнительные вопросы.</Label>
             <Image/>
             {questions_answers}
-            <SendDataButton onClick={()=>sendData(navigate)}>Отправить ответы</SendDataButton>
+            <SendDataButton onClick={()=>sendData(navigate) }>Отправить ответы</SendDataButton>
         </TestFrame>
     )
 }

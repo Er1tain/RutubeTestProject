@@ -37,7 +37,14 @@ export default function Feedback() {
 
     //if test was finished in past then redirect in /dejavu
     useEffect(() => {
-        if (localStorage.length == 7) navigate("/dejavu");
+            if (localStorage.length == 7) {
+                navigate("/feedback");
+
+            }
+            else if (localStorage.length == 8) navigate("/dejavu");
+            else if (localStorage.length == 0) navigate("/");
+            else if (localStorage.length >= 1 && localStorage.length < 7) navigate("/questions");
+
     }, []);
 
     return (

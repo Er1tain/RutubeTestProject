@@ -3,6 +3,7 @@ import Divider from "../components/Evaluation/Divider";
 import styled from "styled-components";
 import Image from "../components/Dejavu/image";
 import TextContent from "../components/Dejavu/TextContent";
+import {useEffect} from "react";
 
 const Center = styled.div`
     display: flex;
@@ -29,6 +30,7 @@ const FrameImage = styled.div`
     flex-grow: 0;`
 
 export default function Dejavu() {
+
     return (
         <div>
             <Header/>

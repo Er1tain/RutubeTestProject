@@ -37,11 +37,7 @@ export default function Feedback() {
 
     //if test was finished in past then redirect in /dejavu
     useEffect(() => {
-        for (let i = 0; i < localStorage.length; i++) {
-            let key = localStorage.key(i);
-            if (key != null && localStorage.getItem(key) === null) return
-        }
-        navigate("/dejavu");
+        if (localStorage.length == 7) navigate("/dejavu");
     }, []);
 
     return (
